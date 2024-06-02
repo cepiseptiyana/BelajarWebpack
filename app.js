@@ -16,6 +16,12 @@ login.addEventListener("click", async function () {
     return username;
   }
 
+  async function database() {
+    return fetch("database.json")
+      .then((result) => result.json())
+      .then((data) => data);
+  }
+
   if (findContact(username, password)) {
     window.location.href = "home.html";
     console.log("ok");
@@ -25,9 +31,3 @@ login.addEventListener("click", async function () {
     console.log("data gada");
   }
 });
-
-async function database() {
-  return fetch("database.json")
-    .then((result) => result.json())
-    .then((data) => data);
-}
