@@ -1,0 +1,34 @@
+.form form {
+  position: relative;
+}
+
+.pokemon-container {
+  display: flex;
+  justify-content: end;
+}
+
+.img-pokemon-1 {
+  width: 100px;
+}
+
+/* alert LOGIN */
+.gagal {
+  position: relative;
+  top: -500px;
+}
+
+.gagal-login {
+  position: relative;
+  top: 0;
+  transition: 0.3s;
+}
+
+/* Regis */
+
+.p-regis {
+  display: none;
+}
+
+.acount-same {
+  display: none;
+}
