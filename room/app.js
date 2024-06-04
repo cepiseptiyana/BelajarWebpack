@@ -1,5 +1,5 @@
 const fs = require("node:fs");
-const { laodContact } = require("./room/databaseNode.js");
+const { laodContact } = require("./databaseNode.js");
 
 const express = require("express");
 const app = express();
@@ -7,12 +7,12 @@ const port = 3000;
 
 // static public = menyimpan file gambar,video dll
 // telusuri folder publicnya
-app.use(express.static("public")); // built-in midleware
+app.use(express.static("../public")); // built-in midleware
 app.use(express.json()); // for parsing application/json
 app.use(express.urlencoded({ extended: true })); // for parsing application/x-www-form-urlencoded
 
 app.get("/login", (req, res) => {
-  res.sendFile("./room/halaman/app.html", { root: __dirname });
+  res.sendFile("./halaman/app.html", { root: __dirname });
 });
 
 // request post beda dengan get
