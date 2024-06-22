@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>login</title>
+  </head>
+  <body>
+    <div
+      class="container form"
+      style="
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      "
+    >
+      <form
+        style="
+          padding: 50px;
+          border: 1px solid black;
+          border-radius: 5px;
+          box-shadow: 0 5px 5px 5px rgb(75, 75, 75);
+        "
+      >
+        <div class="pokemon-container">
+          <img
+            src="../../src/public/img/pokemon.jpg"
+            alt=""
+            class="img-pokemon-1"
+          />
+        </div>
+        <div class="alert alert-danger gagal" role="alert">gagal login!!!</div>
+        <h1>Login</h1>
+        <div class="mb-3">
+          <label for="username" class="form-label">Username</label>
+          <input
+            name="username"
+            type="email"
+            class="form-control"
+            id="username"
+            aria-describedby="emailHelp"
+            required
+          />
+        </div>
+        <div class="mb-3">
+          <label for="password" class="form-label">Password</label>
+          <input
+            name="password"
+            type="password"
+            class="form-control"
+            id="password"
+            required
+          />
+        </div>
+        <button type="submit" class="login">login</button>
+      </form>
+    </div>
+  </body>
+</html>
